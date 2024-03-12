@@ -259,3 +259,21 @@ def move_down(grid):
 # this file only contains all the logic
 # functions to be called in main function
 # present in the other file
+
+############################################################################################################
+# the following functions are added by groupe 8
+
+# if the game is over									# added function to print the terminated game status and board
+def terminated_game(status, mat):
+	if status == 'WON':
+		print("You have won")
+		print("The final matrix is: ")
+		for row in mat:
+			print(row)
+		print("Your score is: ", max(max(mat)))
+	elif status == 'LOST':
+		print("Game Over")
+		print("The final matrix is: ")
+		for row in mat:
+			print(row)
+		print("Your score is: ", max(max(mat)))
