@@ -5,6 +5,7 @@
 # for methods to generate random
 # numbers.
 import random
+import Play_2048
 
 # function to initialize game / grid
 # at the start
@@ -270,10 +271,10 @@ def terminated_game(status, mat):
 		print("The final matrix is: ")
 		for row in mat:
 			print(row)
-		print("Your score is: ", max(max(mat)))
+		print("Your score is: ", Play_2048.maxtileeval(mat)[0])
 	elif status == 'LOST':
 		print("Game Over")
 		print("The final matrix is: ")
 		for row in mat:
 			print(row)
-		print("Your score is: ", max(max(mat)))
+		print("Your score is: ", Play_2048.maxtileeval(mat)[0])
